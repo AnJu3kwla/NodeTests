@@ -1,0 +1,20 @@
+button{
+    color: #ffffff;
+    background-color: darkgreen;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: darkgreen;
+    border-style: groove;
+}
