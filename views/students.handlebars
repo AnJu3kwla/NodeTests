@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <h1 style="text-align: center; color: lightseagreen; margin-bottom: 5%; margin-top: 5%;">Student details</h1>
+        <hr>
+        <table>
+            <tr>
+                <th style="text-align: center; width: 24%;">Index No</th>
+                <th style="text-align: center; width: 24%;">First Name</th>
+                <th style="text-align: center; width: 24%;">Last Name</th>
+                <th style="text-align: center; width: 24%;">Telephone No</th>
+            </tr>
+
+            <tbody>
+                <!-- use # before a keyword.meaning of each is the for loop-->
+                {{#each result }}
+                    <tr>
+                        <td style="text-align: center;">{{this.IndexNo}}</td>
+                        <td style="text-align: left;">{{this.FName}}</td>
+                        <td style="text-align: left;">{{this.LName}}</td>
+                        <td style="text-align: center;">{{this.TelNo}}</td>
+                        <td><button class="btndel"style="background-color: crimson; color:#fff; border-style:none; padding: 10% 35% 10% 35%;border-radius:5px">Delete</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $('.btndel').click(function(){
+        //var iNo = $(this).parent().parent().children().first().html();
+        //window.location.href = "/deleteuser/"+iNo;
+        alert('delete');
+    });
+</script>
